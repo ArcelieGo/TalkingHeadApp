@@ -9,24 +9,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.talkinghead1.MainActivity$PlaceholderFragment" >
 
-    <FrameLayout
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignTop="@+id/imageView1" >
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:orientation="vertical" >
 
-    </FrameLayout>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:onClick="playPauseVoice"
+            android:scaleType="fitCenter"
+            android:src="@drawable/face_1" />
+        
+            <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
-        android:onClick="playPauseVoice"
-        android:scaleType="fitCenter" />
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1" >
+
+    </ListView>
+        
+        
+        
+    </LinearLayout>
+
+
 
 </RelativeLayout>

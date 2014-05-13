@@ -21,30 +21,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="15dp"
-        android:text="@string/two"
-        android:textStyle="bold"
-        android:textColor="@color/purple"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="14dp"
-        android:text="@string/three"
-        android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/purple" />
-
-    <TextView
         android:id="@+id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -56,18 +32,6 @@
         android:textColor="@color/black"
         android:textSize="23sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="15dp"
-        android:text="@string/loc"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/green"
-        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/textView1"
@@ -82,15 +46,58 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="@string/loc"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="@string/two"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/purple"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="@string/three"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/purple"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView6"
         android:layout_below="@+id/textView6"
-        android:layout_marginTop="15dp"
         android:text="@string/four"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/purple"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:onClick="enterApp"
+        android:text="@string/start" />
 
 </RelativeLayout>

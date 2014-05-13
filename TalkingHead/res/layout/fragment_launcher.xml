@@ -30,7 +30,7 @@
         android:layout_below="@+id/textView2"
         android:layout_marginTop="31dp"
         android:background="@color/light_purple"
-        android:onClick="enterApp"
+        android:onClick="enterInstruction"
         android:text="@string/start"
         android:textStyle="bold" />
 

@@ -7,19 +7,21 @@
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_instructions">InstructionsActivity</string>
     <string name="welcomepage">W E L C O M E P A G E</string>
-    
- 
     <string name="start">START</string>
     <string name="inst">INSTRUCTION</string>
     <string name="about">ABOUT</string>
     <string name="exit">EXIT</string>
     <string name="welcome">Welcome Page</string>
     <string name="th">TALKING HEAD</string>
+
     <color name="purple">#BA55D3</color>
     <color name="green">#008080</color>
     <color name="light_purple">#DDA0DD</color>
+
     <string name="ag">Arcelie Cahigus Go (S252886)</string>
+
     <color name="black">#000000</color>
+
     <string name="info">Developers Information:</string>
     <string name="rafay">Muhammad Rafay Ishaq (S228021)</string>
     <string name="ravi">Ravisher Sandhu Singh (S263352)</string>
@@ -32,5 +34,8 @@
     <string name="three">3. Click &quot;Start&quot; to start asking question after the welcome message</string>
     <string name="four">4. To pause, tap the screen where the talking head is located</string>
     <string name="loc">Locations are Bookshop, ATM, Engineering, Library, Mal Nairn Auditorium, Navitas Office, Post Office, Security, University Theater, Internationa House Darwin Reception</string>
+    <string name="title_activity_location">Location</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pop_up_picture">Pop_up_picture</string>
 
 </resources>

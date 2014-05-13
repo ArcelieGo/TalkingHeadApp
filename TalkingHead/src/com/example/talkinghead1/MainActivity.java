@@ -30,12 +30,12 @@ import android.widget.ImageView;
 public class MainActivity extends ActionBarActivity {
 	private final Handler h = new Handler();
 	private static HashSet<MediaPlayer> mpSet = new HashSet<MediaPlayer>();
-	
-	private SpeechRecognizer sr;
 	private static final String TAG = "TalkingHeadApp";
 	private MediaPlayer mediaPlayer;
 	private MediaPlayer mPlayer;
 	private MyRunnable playMyAudio;
+	
+	private SpeechRecognizer sr;
 
 	private int _index;
 	private boolean _faceAnim;
@@ -71,7 +71,6 @@ public class MainActivity extends ActionBarActivity {
 	        sr.setRecognitionListener(new listener());
 	        
    			playMyAudio = new MyRunnable(R.raw.welcome_message);
-   			
    			h.postDelayed(playMyAudio, 500);
 		}
 	
@@ -233,11 +232,16 @@ public class MainActivity extends ActionBarActivity {
                 			noResultMatchCounter = 0;
                 			playMyAudio = new MyRunnable(R.raw.library);
                    			h.postDelayed(playMyAudio, 500);
+                   			
+                   			//todo : empty list view then populate list view base on reply
+                   			
                    		}
                    		else if (tmpData.toLowerCase().contains("atm")) {
                    			noResultMatchCounter = 0;
                    			playMyAudio = new MyRunnable(R.raw.atm);
                    			h.postDelayed(playMyAudio, 500);
+                   			
+                   			
                    		}
                    		else if (tmpData.toLowerCase().contains("bookshop")) {
                    			noResultMatchCounter = 0;
